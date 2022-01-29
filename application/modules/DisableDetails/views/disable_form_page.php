@@ -107,7 +107,7 @@
                                          <?php endforeach;?>
                                         </select>
                                    </div>
-                                   <div class="col-md-3 mb-sm-2">
+                                   <div class="col-md-2 mb-sm-2">
                                        <select name="district" class="form-control district select2 district_selected" required id="district_selected-1">
                                            <option value="" >जिल्ला</option>
                                         <?php  foreach($districts as $district): ?>
@@ -129,7 +129,7 @@
                                         <?php endforeach;?>
                                         </select>
                                    </div>
-                                   <div class="col-md-3 mb-sm-2">
+                                   <div class="col-md-2 mb-sm-2">
                                        <select name="local_body" class="form-control local-body select2 local_body_selected" required id="local_body_selected-1">
                                            <option value="">गा.वि.स./न.पा </option>
                                            <?php foreach($locals as $local): ?>
@@ -151,7 +151,7 @@
                                            <?php endforeach;?>
                                        </select>
                                    </div>
-                                   <div class="col-md-2 mb-sm-2">
+                                   <div class="col-md-1.5 mb-sm-1">
                                        <select name="ward" class="form-control ward-no select2 ward_selected" required id="ward_selected-1">
                                              <option value="" selected>वडा नं</option>
                                          <?php foreach($wards as $ward) : ?>
@@ -171,6 +171,10 @@
                                              ><?= $ward->name ?></option>
                                          <?php endforeach;?>
                                         </select>
+                                   </div>
+                                   
+                                   <div class="col-md-2 mb-sm-2">
+                                   <input type="text" placeholder="टोल" name="tole" class="form-control "/>
                                    </div>
                                </div>
                        </div>
@@ -241,6 +245,35 @@
                        </div>
                     </div>
                     <div class="row">
+                       <div class="col-md-5">
+                           <div class="form-group row">
+                               <label class="col-sm-4 col-form-label"><span
+                                       class="float-right">जन्मदर्ता नम्बर<span
+                                       class="text-danger">&nbsp;*</span></span></label>
+                               <div class="col-sm-7">
+                                   <div class="input-group">
+                                       <input type="text" id="nepaliDate4" name="nepali_birth_cert_no" class="form-control" required value="<?= isset($result) ? $result->nepali_birth_date : set_value('nepali_birth_date')?>" placeholder=""/>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-4">
+                           <div class="form-group row">
+                               <label class="col-sm-5 col-form-label">
+                                   <span class="float-right">जन्मदर्ता जारि मिति
+                                       <span class="text-danger">&nbsp;*</span>
+                                    </span>
+                                </label>
+                               <div class="col-sm-7">
+                                   <div class="input-group">
+                                       <input type="text" id="nepaliDate4" name="nepali_birth_reg_no" class="form-control" required value="<?= isset($result) ? $result->nepali_birth_date : set_value('nepali_birth_date')?>" placeholder=""/>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label"><span
@@ -301,6 +334,41 @@
                                             ><?= $district->name ?></option>
                                             <?php endforeach;?>
                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">
+                                    <span class="float-right">निवेदन दर्ता मिति<span
+                                        class="text-danger">&nbsp;*</span></span></label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" name="nibedhan_reg_no" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">
+                                    <span class="float-right">परिचयपत्र दर्ता मिति<span
+                                        class="text-danger">&nbsp;*</span></span></label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" name="nibedhan_reg_no" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">
+                                    <span class="float-right">पुरानो प. प. न.</span></label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" name="nibedhan_reg_no" class="form-control"/>
                                     </div>
                                 </div>
                             </div>

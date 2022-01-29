@@ -37,6 +37,7 @@
                            </div>
                        </div>
                    </div>
+                   
                    <div class="col-md-3">
                        <div class="form-group row">
                            <label class="col-sm-4 col-form-label"><span
@@ -99,6 +100,17 @@
                          </div>
                      </div>
                  </div>
+                 <div class="col-md-4">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">
+                                    <span class="float-right">निवेदन दर्ता मिति</span></label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" name="nibedhan_reg_no" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                  <div class="col-md-10 mb-3">
                          <button type="submit" class="btn btn-info" name="search"><i class="fa fa-search"></i> खोज्नुहोस</button>
                  </div>
