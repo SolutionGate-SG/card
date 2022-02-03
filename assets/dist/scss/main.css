@@ -121,7 +121,7 @@ a {
 
 input {
   background-color: #fff !important;
-  color: #fff !important;
+  /* color: #fff !important; */
 }
 
 #dash_new_.content {
